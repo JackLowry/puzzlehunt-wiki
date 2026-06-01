@@ -47,9 +47,17 @@
 
 ## Google Sheets Toolkit { #sheets-toolkit }
 
-A shareable Google Sheet template with custom `=FUNCTION()` formulas for in-hunt decoding.
+A Google Sheet with custom `=FUNCTION()` formulas for in-hunt decoding.
 
-**→ [Make a copy of the Toolkit](#)** *(link coming once published)*
+**→ [Make a copy of the Toolkit](#)** *(link coming — see setup below)*
+
+### Setup (one-time, ~2 minutes)
+
+1. Open a new Google Sheet
+2. Click **Extensions → Apps Script**
+3. Delete the placeholder code, paste the contents of [`sheets/Code.gs`](https://github.com/JackLowry/puzzlehunt-wiki/blob/main/sheets/Code.gs)
+4. Hit **Save** (floppy disk icon), then close the Apps Script tab
+5. All `=FUNCTION_NAME()` formulas are now available in your sheet
 
 ### Available Functions
 
@@ -72,6 +80,8 @@ A shareable Google Sheet template with custom `=FUNCTION()` formulas for in-hunt
 | `=FROM_BASE64(text)` | `=FROM_BASE64("SGVsbG8=")` | `Hello` |
 | `=INDEX_LETTERS(text, indices)` | `=INDEX_LETTERS("HELLO", "1,3,5")` | `HLO` |
 | `=EVERY_NTH(text, n, start)` | `=EVERY_NTH("ABCDEF", 2, 1)` | `ACE` |
+| `=FIRST_LETTERS(text)` | `=FIRST_LETTERS("Hunt Every Note To Erase Resolve")` | `HENTER` |
+| `=POLYBIUS_DECODE(text)` | `=POLYBIUS_DECODE("23 15 12 12 34")` | `HELLO` |
 
 ### Pre-built Tabs
 
