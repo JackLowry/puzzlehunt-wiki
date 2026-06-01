@@ -1,0 +1,79 @@
+site_name: Puzzlehunt Wiki
+site_description: Reference and toolkit for competitive puzzlehunts
+site_url: https://jacklowry.github.io/puzzlehunt-wiki/
+repo_url: https://github.com/jacklowry/puzzlehunt-wiki
+repo_name: jacklowry/puzzlehunt-wiki
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - tables
+  - attr_list
+  - def_list
+  - footnotes
+
+nav:
+  - Home: index.md
+  - Encodings:
+    - Substitution Ciphers: encodings/substitution.md
+    - Transposition Ciphers: encodings/transposition.md
+    - Symbol Ciphers: encodings/symbol-ciphers.md
+    - Modern Encodings: encodings/modern.md
+  - Symbol Languages:
+    - Morse Code: symbol-languages/morse.md
+    - Braille: symbol-languages/braille.md
+    - Semaphore: symbol-languages/semaphore.md
+    - NATO Phonetic: symbol-languages/nato-phonetic.md
+    - ASL Fingerspelling: symbol-languages/asl-fingerspelling.md
+    - Other: symbol-languages/other.md
+  - Indexing:
+    - A1Z26: indexing/a1z26.md
+    - Phone Keypad: indexing/phone-keypad.md
+    - Periodic Table: indexing/periodic-table.md
+    - Colors & Orderings: indexing/colors.md
+    - Other Orderings: indexing/other-orderings.md
+  - Puzzle Types:
+    - Cryptic Crosswords: puzzle-types/cryptics.md
+    - Logic Puzzles: puzzle-types/logic.md
+    - Word Puzzles: puzzle-types/word-puzzles.md
+    - Visual & Stego: puzzle-types/visual.md
+    - Audio: puzzle-types/audio.md
+  - Meta Techniques:
+    - Extraction Methods: meta-techniques/extraction.md
+    - Common AHAs: meta-techniques/common-ahas.md
+  - Tools: tools.md
