@@ -1503,6 +1503,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#setup-one-time-2-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup (one-time, ~2 minutes)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#available-functions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1657,6 +1668,17 @@
   
     <nav class="md-nav" aria-label="Google Sheets Toolkit">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-one-time-2-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup (one-time, ~2 minutes)
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#available-functions" class="md-nav__link">
@@ -1839,8 +1861,16 @@
 </table>
 <hr />
 <h2 id="sheets-toolkit">Google Sheets Toolkit</h2>
-<p>A shareable Google Sheet template with custom <code>=FUNCTION()</code> formulas for in-hunt decoding.</p>
-<p><strong>→ <a href="#">Make a copy of the Toolkit</a></strong> <em>(link coming once published)</em></p>
+<p>A Google Sheet with custom <code>=FUNCTION()</code> formulas for in-hunt decoding.</p>
+<p><strong>→ <a href="#">Make a copy of the Toolkit</a></strong> <em>(link coming — see setup below)</em></p>
+<h3 id="setup-one-time-2-minutes">Setup (one-time, ~2 minutes)</h3>
+<ol>
+<li>Open a new Google Sheet</li>
+<li>Click <strong>Extensions → Apps Script</strong></li>
+<li>Delete the placeholder code, paste the contents of <a href="https://github.com/JackLowry/puzzlehunt-wiki/blob/main/sheets/Code.gs"><code>sheets/Code.gs</code></a></li>
+<li>Hit <strong>Save</strong> (floppy disk icon), then close the Apps Script tab</li>
+<li>All <code>=FUNCTION_NAME()</code> formulas are now available in your sheet</li>
+</ol>
 <h3 id="available-functions">Available Functions</h3>
 <table>
 <thead>
@@ -1935,6 +1965,16 @@
 <td><code>=EVERY_NTH(text, n, start)</code></td>
 <td><code>=EVERY_NTH("ABCDEF", 2, 1)</code></td>
 <td><code>ACE</code></td>
+</tr>
+<tr>
+<td><code>=FIRST_LETTERS(text)</code></td>
+<td><code>=FIRST_LETTERS("Hunt Every Note To Erase Resolve")</code></td>
+<td><code>HENTER</code></td>
+</tr>
+<tr>
+<td><code>=POLYBIUS_DECODE(text)</code></td>
+<td><code>=POLYBIUS_DECODE("23 15 12 12 34")</code></td>
+<td><code>HELLO</code></td>
 </tr>
 </tbody>
 </table>
